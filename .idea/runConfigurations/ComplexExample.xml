@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ComplexExample" type="Application" factoryName="Application" singleton="true">
+    <option name="MAIN_CLASS_NAME" value="com.kduda.akka.typed.complex.ComplexExample" />
+    <module name="akka-typed" />
+    <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.kduda.akka.typed.complex.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method />
+  </configuration>
+</component>
