@@ -1,7 +1,7 @@
 package com.kduda.akka.typed.complex
 
 import akka.actor.typed.ActorSystem
-import com.kduda.akka.typed.simple.actors.RootCoordinator
+import com.kduda.akka.typed.complex.actors.RootCoordinator
 
 import scala.concurrent.Await
 import scala.concurrent.duration._
