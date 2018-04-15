@@ -12,7 +12,7 @@ import com.kduda.akka.typed.complex.commands.GetSession
   */
 object RootCoordinator {
   val coordinator: Behavior[NotUsed] =
-    Behaviors.setup { ctx ⇒
+    Behaviors.setup { ctx =>
       val chatRoom = ctx.spawn(ChatRoomActor.behavior, "TypedChatRoom")
 
       val johnRef = ctx.spawn(ChatRoomUser.user, "John")
@@ -24,7 +24,7 @@ object RootCoordinator {
         * When actor is terminated - stop it
         */
       Behaviors.receiveSignal {
-        case (_, Terminated(_)) ⇒ Behaviors.stopped
+        case (_, Terminated(_)) => Behaviors.stopped
       }
     }
 }
