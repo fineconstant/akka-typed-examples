@@ -18,7 +18,7 @@ object RootCoordinator {
       val johnRef = ctx.spawn(ChatRoomUser.user, "John")
       ctx.watch(johnRef) // register for Terminated notification
 
-      chatRoom ! GetSession("the ol’ John", johnRef)
+      chatRoom ! GetSession(screenName = "ol’ John", replyTo = johnRef)
 
       /**
         * When actor is terminated - stop it
